@@ -100,7 +100,7 @@ make re
 
 <a name="test"/> <h2> 👨‍💻 Tests </h2> </a>
 - The makefile is compiling with fsanitize to check for leaks.
-- No special teste for this minishell, you can type some of the shell commands.
+- No special test for this minishell, you can type some of the shell commands.
 <p></p>
 <a href = "#content">📋</a>
 
