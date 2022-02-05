@@ -38,10 +38,10 @@
 - Single quotes, inhibit all interpretation of a sequence of characters.
 - Double quotes, inhibit all interpretation of a sequence of characters except for $.
 - Redirects
-    - <
-    - >
-    - <<
-    - >> , No history update
+    - \<
+    - \>
+    - \<<
+    - \>> , No history update
 - Pipes
 - Environmment variables
 - $?
