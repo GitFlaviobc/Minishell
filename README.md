@@ -17,18 +17,36 @@
 - This is a minishell, recreate some of the shell functionality.
 - Learned a lot about how the shell works inside and some new commands.
 - My first project in a team (duo).
+- We decided to work together on the tasks. And I learned that 2 brains makes thinking process more efficient.
+- I learned about pipes, tolkens, execve, builtin functions, and a lot about shell commands. 
+- Fixed more my knowledge about signals, parsing, File Descriptors, manipulate files.
+- After I finished the project I looked for ways of parsing (because it was a lot of work). I found things about parsing algorithms and compiler design. I will study more about this. 
 <p></p>
 <a href = "#content">📋</a>
 
 <a name="goal"/> <h2> 🎯 Goal </h2> </a>
-- The client will use signals to send a message to the server.
-- The server will get the signals and translate to print the message on the terminal.
-- Signals SIGUSR1 and SIGUSR2.
-- Server will print its PID on the creation.
-- Client will send a message to the PID.
-- Each character of the message from the client will be translated to 0 and 1 by using the signals.
-- The server will receive the signals and translate back to characters and print on the terminal.
-- The server and client will send messages between each other to confirm success or errors.
+- The goal is to recreate some functionality of the shell.
+- Read the line input and save the history
+- Builtin commands: 
+    - echo, with/out flag -n
+    - cd
+    - pwd (no options)
+    - export (no options)
+    - unset (no options)
+    - env (no options)
+    - exit (no options)
+- Single quotes, inhibit all interpretation of a sequence of characters.
+- Double quotes, inhibit all interpretation of a sequence of characters except for $.
+- Redirects
+    - \<
+    - \>
+    - \<<
+    - \>> , No history update
+- Pipes
+- Environmment variables
+- $?
+- Signals ctrl+d , ctrl+\ , ctrl+c
+- execve to execute other shell commands
 <p></p>
 <a href = "#content">📋</a>
 
@@ -51,9 +69,9 @@
 
 - Clone the repository
 ```bash
-git clone https://github.com/GitFlaviobc/minitalk.git
+git clone https://github.com/GitFlaviobc/Minishell
 ```
-- to create the client and server
+- to create the minishell
 ```bash
 make
 ```
@@ -69,25 +87,20 @@ make clean
 ```bash
 make fclean
 ```
- - to delete all files and recreate the client and server
+ - to delete all files and recreate the minishell
 ```bash
 make re
 ```
-- to run the server
+- to run the minishell, feel free to test any commands.
 ```bash
-./server
-```
-- to run the client
-```bash
-./client "SERVER PID" message
+./minishell
 ```
 <p></p>
 <a href = "#content">📋</a>
 
 <a name="test"/> <h2> 👨‍💻 Tests </h2> </a>
-- This can generate random texts: [Text](http://www.dummytextgenerator.com/#jump)
-- This can generate Unicode messages: [Unicode](https://texteditor.com/)
-- ⚠️For multiple strings don't forget to put between quotes.
+- The makefile is compiling with fsanitize to check for leaks.
+- No special test for this minishell, you can type some of the shell commands.
 <p></p>
 <a href = "#content">📋</a>
 
