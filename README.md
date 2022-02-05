@@ -1,4 +1,4 @@
-# Minitalk - Server / Client - .... . .-.. .-.. --- / .-- --- .-. .-.. -..
+# Minishell - A small Shell but a lot of team work
 
 <h1 name ="content" align = "center">📋 Table of contents</h1>
 <p align = "center">
@@ -13,8 +13,10 @@
 </p>
 
 <a name="intro"/> <h2> Intro </h2> </a>
-- This is a server/client project.
-- On this project I learned about PID, signals and bitwise operations.
+- This project was done in duo with [Rafael Lacerda](https://github.com/rafalacerda1530)
+- This is a minishell, recreate some of the shell functionality.
+- Learned a lot about how the shell works inside and some new commands.
+- My first project in a team (duo).
 <p></p>
 <a href = "#content">📋</a>
 
