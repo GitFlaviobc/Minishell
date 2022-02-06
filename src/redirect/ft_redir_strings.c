@@ -6,7 +6,7 @@
 /*   By: fbonini <fbonini@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/26 14:27:46 by fbonini           #+#    #+#             */
-/*   Updated: 2022/02/05 15:28:00 by fbonini          ###   ########.fr       */
+/*   Updated: 2022/02/06 09:24:10 by fbonini          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,11 +58,10 @@ void	ft_new_str(t_tolken *tolken, char *aux, char *key, char *name)
 	{
 		free(tolken->str);
 		tolken->str = ft_strdup(tolken->key);
-		tmp = ft_strjoin(tolken->str, tolken->content);
-		free(tolken->str);
-		tolken->str = ft_strdup(tmp);
+		ft_add_char(&tmp, &tolken->str, ' ');
+		ft_join_string(&tmp, &tolken->str, tolken->content);
 	}
-	ft_free_two_to_four(tmp, copy, remove, NULL);
+	ft_free_two_to_four(copy, remove, NULL, NULL);
 }
 
 char	*ft_get_file_name(char *str, int index)
