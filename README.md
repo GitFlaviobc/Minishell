@@ -44,7 +44,7 @@
     - \>> , No history update
 - Pipes
 - Environmment variables
-- $?
+- $VARIABLE including $?
 - Signals ctrl+d , ctrl+\ , ctrl+c
 - execve to execute other shell commands
 <p></p>
@@ -60,14 +60,15 @@
 
 <a name="function"/> <h2> 📚 Functionality </h2> </a>
 
-⚠️🚧
+![Minishell Flow](https://github.com/GitFlaviobc/Minishell/blob/master/Images/Minishell_Flowchart.JPG)
+![Minishell Gif](https://github.com/GitFlaviobc/Minishell/blob/master/Images/MiniShell.gif)
 
 <p></p>
 <a href = "#content">📋</a>
 
 <a name="how"/> <h2> 📖 How to use </h2> </a>
 
-- Clone the repository
+- Clone the repository  
 ```bash
 git clone https://github.com/GitFlaviobc/Minishell
 ```
