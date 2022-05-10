@@ -6,7 +6,7 @@
 /*   By: fbonini <fbonini@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/26 14:27:46 by fbonini           #+#    #+#             */
-/*   Updated: 2022/02/06 09:24:10 by fbonini          ###   ########.fr       */
+/*   Updated: 2022/02/07 14:38:30 by fbonini          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,6 @@ char	*ft_create_content(char *copy, char *remove, int len)
 	ft_bzero(&strings, sizeof(t_redir));
 	while (copy[strings.i + j] != '\0')
 	{
-		if (copy[strings.i + j] == '>' || copy[strings.i + j] == '<')
-			break ;
 		if (ft_strncmp(&copy[strings.i + j], remove, len) == 0)
 			j += len;
 		if (copy[strings.i + j] != '\0')
