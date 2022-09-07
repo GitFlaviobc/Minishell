@@ -43,10 +43,8 @@ char	**ft_set_keys(t_mem *mem)
 int	ft_check_key(char *str, char **keys)
 {
 	int	i;
-	int	size;
 
 	i = 0;
-	size = ft_strlen(str);
 	while (i < MAX_KEYS)
 	{
 		if (!ft_strcmp(str, keys[i]))

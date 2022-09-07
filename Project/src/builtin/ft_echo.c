@@ -30,7 +30,6 @@ int	ft_flag_n(char **str)
 
 int	ft_echo(t_mem *mem, t_env_list *env_list, char *str)
 {
-	int		i;
 	int		flag_n;
 
 	(void) mem;
@@ -40,7 +39,6 @@ int	ft_echo(t_mem *mem, t_env_list *env_list, char *str)
 		ft_putchar_fd('\n', 1);
 		return (0);
 	}
-	i = 0;
 	while (*str == ' ')
 		str++;
 	flag_n = ft_flag_n(&str);
